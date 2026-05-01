@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix Leaflet z-index dans les modals */
+.leaflet-pane {
+  z-index: 10;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 15;
+}
+
+/* Styles de base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix icônes Leaflet */
+.leaflet-default-icon-path {
+  background-image: none;
+}
